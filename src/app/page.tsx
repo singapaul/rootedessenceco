@@ -5,11 +5,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { NavBar } from "@/components/organisms/NavBar";
 import { Hero } from "@/components/organisms/Hero";
+import { Story } from "@/components/organisms/Story";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-6">
+      <NavBar />
       <Hero title="Hi" />
+  <Story/>
  
  <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">

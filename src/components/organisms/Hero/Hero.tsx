@@ -9,7 +9,7 @@ type HeroProps = {
 
 export const Hero = ({ title }: HeroProps) => {
   return (
-    <section className="flex flex-col w-full p-4 sm:flex-row items-center bg-green-600 justify-between">
+    <section className="flex flex-col w-full mt-14 p-4 sm:flex-row items-center bg-green-600 justify-between">
       <div className="flex flex-col gap-4">
         <TypographyH1>{"Rooted Essence Co"}</TypographyH1>
         <TypographyH2>
