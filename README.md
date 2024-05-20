@@ -9,9 +9,7 @@ Lime-300
 Stone-200 (text)
 orange-50 bacjground
 
-
-
-### GOAL 19TH mAY
+### GOAL 19TH/20th mAY
 1. fINISH UI OF HOME PAGE 
 STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 
@@ -26,6 +24,7 @@ STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 
 - Framer motion
 -basic SEO
+- parallax scroll on product list
 
 ## checklist 
 

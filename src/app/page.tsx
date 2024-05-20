@@ -21,7 +21,7 @@ export default function Home() {
       <Values />
       <LinkBanner title="Products" />
       <Products />
-      <FAQ />
+      {/* <FAQ /> */}
       <Contact />
       <Footer />
     </main>
