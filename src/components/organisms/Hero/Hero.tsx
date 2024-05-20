@@ -1,26 +1,70 @@
-import { TypographyH1, TypographyH2 } from "@/components/molecules/typography";
-import { Button } from "@/components/ui/button";
-import stockImage from "@/lib/assets/images/rsz_1stockfrank-removebg-preview.png";
+import { TypographyH1, TypographyH4 } from "@/components/molecules/typography";
 import Image from "next/image";
+import rainforest from "@/lib/assets/images/rainforrest.png";
+import Autoplay from "embla-carousel-autoplay";
 
-type HeroProps = {
-  title?: string;
-};
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import { useRef } from "react";
 
-export const Hero = ({ title }: HeroProps) => {
+export const Hero = () => {
+
+
+const CarouselMessages =  [
+  "Empowering Communities, Preserving Nature, Ensuring Quality",
+  "Ethical Sourcing for a Sustainable Future",
+  "Pure Frankincense, Authentic Origins, Lasting Impact",
+  "Integrity in Every Drop, Dignity in Every Step",
+  "Supporting Women, Sustaining Ecosystems, Serving Excellence"
+]
+  const plugin = useRef(Autoplay({ delay: 4000 }));
   return (
-    <section className="flex flex-col w-full mt-14 p-4 sm:flex-row items-center bg-green-600 justify-between">
-      <div className="flex flex-col gap-4">
-        <TypographyH1>{"Rooted Essence Co"}</TypographyH1>
-        <TypographyH2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </TypographyH2>
-        <div className="flex gap-3">
-          <Button variant={'outline'}>Learn more</Button>
-          <Button variant={'secondary'}>Contact</Button>
+    <section className="flex flex-col w-full mt-14">
+      <div className="w-full flex flex-col min-h-60 sm:min-h-[600px] sm:flex-row-reverse sm:justify-between justify-center gap-9 sm:gap-0 bg-green-900">
+        <TypographyH1 className="text-lime-300 text-right sm:self-end">
+          {"Rooted Essence Co"}
+        </TypographyH1>
+        <TypographyH4 className="text-lime-300 text-left self-center text-base">
+          Sourcing & supplying Frankincense for all your customers needs.
+        </TypographyH4>
+      </div>
+      <div className="w-full flex flex-col sm:flex-row">
+        <div className="w-full">
+          <Image
+            src={rainforest}
+            alt="rainforest stock image"
+            className="object-cover max-h-96"
+          />
+        </div>
+        <div className="w-full bg-lime-300 flex items-center min-h-52">
+          <Carousel
+            plugins={[plugin.current]}
+            orientation="vertical"
+            className="w-full"
+            opts={{
+              loop: true
+            }}
+          >
+            <CarouselContent className="h-[200px]">
+              {CarouselMessages.map((message, index) => (
+                <CarouselItem key={index}>
+                  <Card>
+                    <CardContent className="flex aspect-square items-center justify-center p-6 bg-lime-300">
+                      <span className="text-4xl font-semibold">
+                         {message}
+                      </span>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
-      <Image alt="Hero logo" src={stockImage} />
     </section>
   );
 };

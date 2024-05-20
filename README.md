@@ -3,6 +3,13 @@ https://ui.aceternity.com/components/sticky-scroll-reveal
 https://codesandbox.io/p/sandbox/react-framer-motion-landing-page-6lysl?file=%2Fsrc%2Fcomponents%2FBanner.js 
 
 
+### colors 
+Green-900
+Lime-300
+Stone-200 (text)
+orange-50 bacjground
+
+
 
 ### GOAL 19TH mAY
 1. fINISH UI OF HOME PAGE 
@@ -18,6 +25,7 @@ STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 ## extra tocuhes
 
 - Framer motion
+-basic SEO
 
 ## checklist 
 
@@ -27,6 +35,3 @@ STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 ## questions
 
 - do you want an FAQs seciton? 
-
-
-
