@@ -5,8 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import sendgrid from "@sendgrid/mail";
-
+import { Email } from "./Email";
 import {
   Form,
   FormControl,
@@ -17,6 +16,8 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { render } from "@react-email/render";
+import { stringify } from "querystring";
 const formSchema = z.object({
   name: z.string().min(4),
   businessName: z.string().min(2).max(50),
@@ -35,25 +36,27 @@ export const ContactForm = () => {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     const { businessName, emailAddress, industry, message, name } = values;
+
     try {
-      const res = await fetch('http://localhost:3000/api/email',{
-        method: 'POST',
-        body: JSON.stringify({businessName}),
+      const res = await fetch("http://localhost:3000/api/email", {
+        method: "POST",
+        body: JSON.stringify({businessName, emailAddress, industry, message, name}),
         headers: {
-          'content-type': 'application/json'
-        }
-      })
-      console.log(res)
-      if(res.ok){
-        console.log("Yeai!")
-      }else{
-        console.log("Oops! Something is wrong.")
+          "content-type": "application/json",
+        },
+      });
+ 
+      const body = await res.json();
+ 
+      if (res.ok) {
+        console.log("successful email");
+      } else {
+        console.log("Oops! Something is wrong.");
       }
     } catch (error) {
-        console.log(error)
-    } 
+      console.log(error);
+    }
   }
-
 
   return (
     <Form {...form}>
@@ -98,9 +101,7 @@ export const ContactForm = () => {
               <FormControl>
                 <Input placeholder="" {...field} />
               </FormControl>
-              {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
+
               <FormMessage />
             </FormItem>
           )}
@@ -126,7 +127,7 @@ export const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email address</FormLabel>
+              <FormLabel>Your message</FormLabel>
               <FormControl>
                 <Textarea {...field} placeholder="Your message here..." />
               </FormControl>

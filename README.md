@@ -18,7 +18,7 @@ STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 1. Create basic outline
 2. Get functionality in with form 
 3. Tidy up the UI and implement color schemes 
-
+4. display a toast on submission of a contact form
 
 ## extra tocuhes
 
@@ -34,3 +34,10 @@ STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 ## questions
 
 - do you want an FAQs seciton? 
+
+
+---
+
+fonts
+footer tidy up
+navbar tidy up

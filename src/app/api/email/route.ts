@@ -1,26 +1,94 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import { NextResponse } from "next/server";
-import sendgrid from "@sendgrid/mail";
+import nodemailer from "nodemailer";
  
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
-// /pages/api/postData.js
+// To handle a POST request to /api
+export async function POST(request: any) {
+  const transporter = nodemailer.createTransport({
+    host: "smtp-relay.brevo.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: "752c02001@smtp-brevo.com",
+      pass: "2h1ygTnwEIpG5mqP",
+    },
+  });
 
-export async function POST(req: NextApiRequest,res: NextApiResponse){
-console.log('hiihih')
-    console.log(req.body);
+  const requestBody = await request.json();
+  const {businessName, emailAddress, industry, message, name} = requestBody
+  
   try {
-    console.log("REQ.BODY", req.body);
-    await sendgrid.send({
-      to: "paulmichaelhardman@gmail.com", // Your email where you'll receive emails
-      from: "manuarorawork@gmail.com", // your website email address here
-      subject: `balls`,
-      html: `<div>You've got a mail</div>`,
-    });
+    const options = {
+      from: "enquiries@rootedessenceco.com",
+      to: "paulmichaelhardman@gmail.com",
+      subject: `New enquiry: ${requestBody.name} from ${requestBody.businessName}`,
+      html: `<html>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form Submission</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+          }
+          .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+          .section {
+            margin-bottom: 16px;
+          }
+          .label {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+          }
+          .value {
+            font-size: 14px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="section">
+            <span class="label">Name</span>
+            <div class="value">${name}</div>
+          </div>
+          <div class="section">
+          <span class="label">Message</span>
+          <div class="value">${message}</div>
+        </div>
+          <div class="section">
+            <span class="label">Business name</span>
+            <div class="value">${businessName}</div>
+          </div>
+          <div class="section">
+            <span class="label">Industry</span>
+            <div class="value">${industry}}</div>
+          </div>
+          <div class="section">
+            <span class="label">Email address</span>
+            <div class="value">${emailAddress}</div>
+          </div>
+        </div>
+      </body>
+      </html>`,
+    };
+
+    await transporter.sendMail(options);
+    return NextResponse.json({ message: "successful form submission" }, { status: 200 });
   } catch (error) {
-
-    return res.status(500).json({ error: 'Somthing went wrong' });
+    return NextResponse.json({ message: "Something wrong" }, { status: 500 });
   }
-
-
-  // return NextResponse.json(req.body)
 }

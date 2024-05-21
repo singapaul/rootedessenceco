@@ -1,4 +1,4 @@
-import { TypographyH1, TypographyH4 } from "@/components/molecules/typography";
+import { TypographyH1, TypographyH4, amatic } from "@/components/molecules/typography";
 import Image from "next/image";
 import rainforest from "@/lib/assets/images/rainforrest.png";
 import Autoplay from "embla-carousel-autoplay";
@@ -23,12 +23,12 @@ const CarouselMessages =  [
 ]
   const plugin = useRef(Autoplay({ delay: 4000 }));
   return (
-    <section className="flex flex-col w-full mt-14">
+    <section className="flex flex-col w-full pt-20">
       <div className="w-full flex flex-col min-h-60 sm:min-h-[600px] sm:flex-row-reverse sm:justify-between justify-center gap-9 sm:gap-0 bg-green-900">
         <TypographyH1 className="text-lime-300 text-right sm:self-end">
           {"Rooted Essence Co"}
         </TypographyH1>
-        <TypographyH4 className="text-lime-300 text-left self-center text-base">
+        <TypographyH4 className="text-lime-300 text-left self-center text-5xl">
           Sourcing & supplying Frankincense for all your customers needs.
         </TypographyH4>
       </div>
@@ -54,7 +54,7 @@ const CarouselMessages =  [
                 <CarouselItem key={index}>
                   <Card>
                     <CardContent className="flex aspect-square items-center justify-center p-6 bg-lime-300">
-                      <span className="text-4xl font-semibold">
+                      <span className={`text-4xl font-semibold ${amatic.className}`}>
                          {message}
                       </span>
                     </CardContent>

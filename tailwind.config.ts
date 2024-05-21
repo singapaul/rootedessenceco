@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss"
-
+ 
 const config = {
   darkMode: ["class"],
   content: [
@@ -10,6 +10,7 @@ const config = {
 	],
   prefix: "",
   theme: {
+ 
     container: {
       center: true,
       padding: "2rem",
@@ -18,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['amatic-sc', 'sans-serif'],
+        // If you want to add more custom fonts, you can do so here
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
