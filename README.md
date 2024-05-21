@@ -36,8 +36,4 @@ STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 - do you want an FAQs seciton? 
 
 
----
-
-fonts
-footer tidy up
-navbar tidy up
+-

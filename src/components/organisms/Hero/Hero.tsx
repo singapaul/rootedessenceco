@@ -25,10 +25,10 @@ const CarouselMessages =  [
   return (
     <section className="flex flex-col w-full pt-20">
       <div className="w-full flex flex-col min-h-60 sm:min-h-[600px] sm:flex-row-reverse sm:justify-between justify-center gap-9 sm:gap-0 bg-green-900">
-        <TypographyH1 className="text-lime-300 text-right sm:self-end">
+        <TypographyH1 className="text-lime-300 text-right sm:self-end leading-normal text-[60px]">
           {"Rooted Essence Co"}
         </TypographyH1>
-        <TypographyH4 className="text-lime-300 text-left self-center text-5xl">
+        <TypographyH4 className="text-lime-300 text-left self-center text-[50px] leading-normal">
           Sourcing & supplying Frankincense for all your customers needs.
         </TypographyH4>
       </div>

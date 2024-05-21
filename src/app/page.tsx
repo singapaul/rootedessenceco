@@ -12,6 +12,8 @@ import RainForest from "@/lib/assets/images/stockFrankTable.png";
 import Image from "next/image";
 
 import FAQ from "@/components/organisms/FAQ/FAQ";
+import Test from "@/components/molecules/MovingBanner/test";
+import MovingBanner from "@/components/molecules/MovingBanner/MovingBanner";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -19,9 +21,9 @@ export default function Home() {
       <Hero />
       <Story />
       <Values />
+      <MovingBanner />
       <LinkBanner title="Products" />
       <Products />
-      {/* <FAQ /> */}
       <Contact />
       <Footer />
     </main>
