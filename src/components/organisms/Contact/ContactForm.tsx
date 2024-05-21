@@ -4,7 +4,8 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea"
+import { Textarea } from "@/components/ui/textarea";
+import sendgrid from "@sendgrid/mail";
 
 import {
   Form,
@@ -30,11 +31,29 @@ export const ContactForm = () => {
     defaultValues: {},
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    console.log(values);
+    const { businessName, emailAddress, industry, message, name } = values;
+    try {
+      const res = await fetch('http://localhost:3000/api/email',{
+        method: 'POST',
+        body: JSON.stringify({businessName}),
+        headers: {
+          'content-type': 'application/json'
+        }
+      })
+      console.log(res)
+      if(res.ok){
+        console.log("Yeai!")
+      }else{
+        console.log("Oops! Something is wrong.")
+      }
+    } catch (error) {
+        console.log(error)
+    } 
   }
+
 
   return (
     <Form {...form}>
@@ -48,9 +67,7 @@ export const ContactForm = () => {
               <FormControl>
                 <Input placeholder="" {...field} />
               </FormControl>
-              {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
+
               <FormMessage />
             </FormItem>
           )}
@@ -104,7 +121,7 @@ export const ContactForm = () => {
             </FormItem>
           )}
         />
-               <FormField
+        <FormField
           control={form.control}
           name="message"
           render={({ field }) => (
@@ -120,7 +137,9 @@ export const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button disabled={!form.formState.isValid} type="submit">Submit</Button>
+        <Button disabled={!form.formState.isValid} type="submit">
+          Submit
+        </Button>
       </form>
     </Form>
   );
