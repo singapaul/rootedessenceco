@@ -16,8 +16,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { render } from "@react-email/render";
-import { stringify } from "querystring";
+ 
 const formSchema = z.object({
   name: z.string().min(4),
   businessName: z.string().min(2).max(50),

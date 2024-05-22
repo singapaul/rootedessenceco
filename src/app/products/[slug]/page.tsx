@@ -51,6 +51,7 @@ const ProductDetail = async ({ params }: { params: any }) => {
       </div>
       <Footer />
     </main>
+ 
   );
 };
 

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 

@@ -1,3 +1,4 @@
+"use client"
 import { TypographyH1, TypographyH4, amatic } from "@/components/molecules/typography";
 import Image from "next/image";
 import rainforest from "@/lib/assets/images/rainforrest.png";

@@ -5,7 +5,9 @@ import { ProductCard } from "@/components/organisms/Products";
 import { productsArray } from "@/lib/assets/copy/products";
 import { ProductGrid } from "@/components/organisms/Products/ProductGrid";
 import { ParallaxBanner } from "react-scroll-parallax";
-export default function Home({ products }: { products: any }) {
+
+
+export const Product = () => {
   return (
     <main className="flex justify-between min-h-screen flex-col items-center">
       <NavBar />
@@ -38,5 +40,6 @@ export default function Home({ products }: { products: any }) {
       </ProductGrid>
       <Footer />
     </main>
+ 
   );
 }

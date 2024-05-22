@@ -1,6 +1,6 @@
 import React from "react";
 import { ContactForm } from "./ContactForm";
-import { TypographyH2, TypographyP, amatic } from "@/components/molecules/typography";
+import { TypographyH2 , amatic } from "@/components/molecules/typography";
 
 export const Contact = () => {
   return (

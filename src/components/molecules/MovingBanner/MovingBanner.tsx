@@ -5,7 +5,7 @@ type Props = {
   imageURL: string;
 };
 
-const MovingBanner = ({ imageURL }: Props) => {
+export const MovingBanner = ({ imageURL }: Props) => {
   return (
     <ParallaxBanner
       layers={[{ image: imageURL, speed: -20 }]}
@@ -13,5 +13,4 @@ const MovingBanner = ({ imageURL }: Props) => {
     />
   );
 };
-
-export default MovingBanner;
+ 
