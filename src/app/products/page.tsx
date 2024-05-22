@@ -1,13 +1,14 @@
-"use client";
+"use client"
 import { Footer } from "@/components/organisms/Footer";
 import { NavBar } from "@/components/organisms/NavBar";
 import { ProductCard } from "@/components/organisms/Products";
 import { productsArray } from "@/lib/assets/copy/products";
 import { ProductGrid } from "@/components/organisms/Products/ProductGrid";
 import { ParallaxBanner } from "react-scroll-parallax";
+import { NextPage } from "next";
 
 
-export const Product = () => {
+ const Page: NextPage= () => {
   return (
     <main className="flex justify-between min-h-screen flex-col items-center">
       <NavBar />
@@ -40,6 +41,7 @@ export const Product = () => {
       </ProductGrid>
       <Footer />
     </main>
- 
-  );
-}
+  )  
+} 
+
+export default Page;
