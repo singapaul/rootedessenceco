@@ -9,8 +9,7 @@ import { LinkBanner } from "@/components/organisms/LinkBanner";
 import { Contact } from "@/components/organisms/Contact";
 import { Footer } from "@/components/organisms/Footer";
  
-import FAQ from "@/components/organisms/FAQ/FAQ";
-import Test from "@/components/molecules/MovingBanner/test";
+ 
 import MovingBanner from "@/components/molecules/MovingBanner/MovingBanner";
 export default function Home() {
   return (

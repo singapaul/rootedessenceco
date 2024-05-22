@@ -5,11 +5,9 @@ import { ProductCard } from "@/components/organisms/Products";
 import { productsArray } from "@/lib/assets/copy/products";
 import { ProductGrid } from "@/components/organisms/Products/ProductGrid";
 import { ParallaxBanner } from "react-scroll-parallax";
-export default function Home({products}: {products: any}) {
-
- 
+export default function Home({ products }: { products: any }) {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex justify-between min-h-screen flex-col items-center">
       <NavBar />
       <ParallaxBanner
         layers={[
@@ -33,6 +31,7 @@ export default function Home({products}: {products: any}) {
               title={product.name}
               subtitle={product.subtitle}
               image={product.image}
+              slug={product.slug}
             />
           );
         })}
@@ -41,5 +40,3 @@ export default function Home({products}: {products: any}) {
     </main>
   );
 }
-
- 

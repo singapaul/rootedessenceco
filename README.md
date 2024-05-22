@@ -9,27 +9,34 @@ Lime-300
 Stone-200 (text)
 orange-50 bacjground
 
-### GOAL 19TH/20th mAY
-1. fINISH UI OF HOME PAGE 
-STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 
 ### core steps
 
-1. Create basic outline
-2. Get functionality in with form 
-3. Tidy up the UI and implement color schemes 
 4. display a toast on submission of a contact form
 
 ## extra tocuhes
 
 - Framer motion
--basic SEO
+- basic SEO
 - parallax scroll on product list
 
 ## checklist 
 
 - check uniformity on paddings 
 - check heading sizes
+- font sizes 
+- c02 calculations
+- toast after sending the email 
+- basic seo (frankensxience b2b?? )
+
+->
+1. Name 
+2. Business Name
+3. Email
+4. Position Held
+5. Industry
+6. Product of Interest - This could have a drop-down or tick box option for the products listed.
+7. Quantity needed
 
 
 ## questions

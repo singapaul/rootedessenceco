@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { amatic } from '@/components/molecules/typography';
+import Link from 'next/link';
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,9 +12,9 @@ export const NavBar = () => {
   return (
     <nav className={`bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b ${amatic.className}`}>
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className={`self-center text-5xl font-semibold whitespace-nowrap dark:text-white ${amatic.className}`}>Rooted Essence Co</span>
-        </a>
+        </Link>
         <div className="flex sm:hidden md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
