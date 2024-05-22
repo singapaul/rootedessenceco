@@ -1,14 +1,14 @@
-import React, { ReactNode } from "react";
+import React  from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 
 type Props = {
-  children?: ReactNode;
+  imageURL: string;
 };
 
-const MovingBanner = ({ children }: Props) => {
+const MovingBanner = ({ imageURL }: Props) => {
   return (
     <ParallaxBanner
-      layers={[{ image: "/women.png", speed: 20 }]}
+      layers={[{ image: imageURL, speed: -20 }]}
       className="aspect-[2/1]"
     />
   );

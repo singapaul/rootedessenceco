@@ -29,6 +29,7 @@ STRETCH GOAL: IMPLEMENT AND MAKE CONTACT FORM FUNCTIONAL
 ## checklist 
 
 - check uniformity on paddings 
+- check heading sizes
 
 
 ## questions

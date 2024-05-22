@@ -8,9 +8,7 @@ import { Products } from "@/components/organisms/Products";
 import { LinkBanner } from "@/components/organisms/LinkBanner";
 import { Contact } from "@/components/organisms/Contact";
 import { Footer } from "@/components/organisms/Footer";
-import RainForest from "@/lib/assets/images/stockFrankTable.png";
-import Image from "next/image";
-
+ 
 import FAQ from "@/components/organisms/FAQ/FAQ";
 import Test from "@/components/molecules/MovingBanner/test";
 import MovingBanner from "@/components/molecules/MovingBanner/MovingBanner";
@@ -21,7 +19,7 @@ export default function Home() {
       <Hero />
       <Story />
       <Values />
-      <MovingBanner />
+      <MovingBanner imageURL="/women.png" />
       <LinkBanner title="Products" />
       <Products />
       <Contact />

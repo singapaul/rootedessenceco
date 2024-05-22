@@ -4,7 +4,7 @@ export const amatic = Amatic_SC({ subsets: ['latin'], weight: ['700']})
 
 export function TypographyH1({ children , className}: { children: any, className?:string }) {
   return (
-    <h1 className={clsx('scroll-m-20 text-4xl font-extrabold lg:text-5xl', className, amatic.className)}>
+    <h1 className={clsx('scroll-m-20 font-extrabold lg:text-5xl', className, amatic.className)}>
       {children}
     </h1>
   );
@@ -12,7 +12,7 @@ export function TypographyH1({ children , className}: { children: any, className
 
 export function TypographyH2({ children , className}: { children: any, className?:string }) {
   return (
-    <h2 className={clsx("scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0", className,amatic.className)}>
+    <h2 className={clsx("scroll-m-20 font-semibold tracking-tight first:mt-0", className,amatic.className)}>
       {children}
     </h2>
   );
@@ -28,7 +28,7 @@ export function TypographyH3({ children , className}: { children: any, className
 
 export function TypographyH4({ children , className}: { children: any, className?:string }) {
   return (
-    <h4 className={clsx("scroll-m-20 text-xl font-semibold tracking-tight", className, amatic.className)}>
+    <h4 className={clsx("scroll-m-20 font-semibold tracking-tight", className, amatic.className)}>
       {children}
     </h4>
   );
