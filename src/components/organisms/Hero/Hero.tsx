@@ -15,6 +15,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { useRef } from "react";
+import Link from "next/link";
 
 export const Hero = () => {
   const CarouselMessages = [
@@ -37,11 +38,11 @@ export const Hero = () => {
           </TypographyH4>
         </div>
         <span className="display flex bg-green-900 text-lime-300 min-h-28 items-end w-full">
-          <TypographyH4 className="text-3xl">Scroll down</TypographyH4>
+          <Link href='/#story'><TypographyH4 className="text-3xl">Scroll down</TypographyH4></Link>
           <ArrowDown className="animate-bounce" />
         </span>
       </div>
-      <div className="w-full flex flex-col sm:flex-row">
+      <div className="w-full flex flex-col sm:flex-row" id="story">
         <div className="w-full">
           <Image
             src={rainforest}

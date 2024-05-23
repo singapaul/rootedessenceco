@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { TypographyH1 } from "@/components/molecules/typography";
+import { amatic } from "@/components/molecules/typography";
 type Props = {
     image: any;
     title: string;
@@ -36,7 +36,7 @@ export const ProductCard = ({image, title, subtitle, slug}: Props) => {
         />
       </div>
       <CardHeader className="grid gap-1 p-4">
-        <CardTitle><TypographyH1 className="text-4xl">{title}</TypographyH1></CardTitle>
+        <CardTitle className={`${amatic.className} text-4xl`}>{title}</CardTitle>
         <CardDescription>{subtitle}</CardDescription>
       </CardHeader>
       <CardContent className="flex items-center justify-center w-full">

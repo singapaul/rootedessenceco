@@ -17,16 +17,21 @@ https://codesandbox.io/p/sandbox/react-framer-motion-landing-page-6lysl?file=%2F
  
 ## checklist 
 
+ 
 
 Basic
-- check uniformity on paddings 
 - fix basic links on the site
-- basic seo (frankensxience b2b?? )
 - Fairwild certidied section
- 
+- check uniformity on paddings 
 Extra
 
 - c02 calculations
 - swap images and see Younis messages 
 - check sending options on the contact form - do I need to do 2 emails??
  
+
+
+# handover
+
+1. Set open graph public image
+2. swap over email addresses
