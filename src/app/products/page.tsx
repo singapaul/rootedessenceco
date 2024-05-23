@@ -6,6 +6,7 @@ import { productsArray } from "@/lib/assets/copy/products";
 import { ProductGrid } from "@/components/organisms/Products/ProductGrid";
 import { ParallaxBanner } from "react-scroll-parallax";
 import { NextPage } from "next";
+import { TypographyH1 } from "@/components/molecules/typography";
 
 
  const Page: NextPage= () => {
@@ -19,7 +20,7 @@ import { NextPage } from "next";
             speed: -15,
             children: (
               <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-8xl text-white">Our product range</h1>
+                <TypographyH1 className="text-8xl sm:text-9xl font-extrabold text-white text-outline-black">Our product range</TypographyH1>
               </div>
             ),
           },

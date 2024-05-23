@@ -1,11 +1,11 @@
 import React from "react";
 import { ContactForm } from "./ContactForm";
 import { TypographyH2 , amatic } from "@/components/molecules/typography";
-
+ 
 export const Contact = () => {
   return (
     <div className="bg-orange-50 w-full p-8 flex flex-col items-center gap-8" id='contact'>
-      <TypographyH2>Contact us</TypographyH2>
+      <TypographyH2 className="text-5xl">Contact us</TypographyH2>
       <div className="flex flex-col sm:flex-row">
         <div className="flex items-center sm:w-1/2">
           <p className={`font-extrabold text-5xl ${amatic.className}`}>

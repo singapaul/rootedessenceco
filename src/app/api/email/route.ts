@@ -14,13 +14,13 @@ export async function POST(request: any) {
   });
 
   const requestBody = await request.json();
-  const {businessName, emailAddress, industry, message, name} = requestBody
+  const {businessName, emailAddress, industry, message, name, product} = requestBody
   
   try {
     const options = {
       from: "enquiries@rootedessenceco.com",
-      to: "paulmichaelhardman@gmail.com",
-      subject: `New enquiry: ${requestBody.name} from ${requestBody.businessName}`,
+      to: ["paulmichaelhardman@gmail.com", emailAddress],
+      subject: `Rooted Essence Co new enquiry: ${requestBody.name} from ${requestBody.businessName}`,
       html: `<html>
       <head>
         <meta charset="UTF-8">
@@ -61,6 +61,10 @@ export async function POST(request: any) {
       </head>
       <body>
         <div class="container">
+          <div class="section">
+            <span class="label">Product</span>
+            <div class="value">${product}</div>
+          </div>
           <div class="section">
             <span class="label">Name</span>
             <div class="value">${name}</div>

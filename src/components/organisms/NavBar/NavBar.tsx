@@ -13,7 +13,7 @@ export const NavBar = () => {
     <nav className={`bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b ${amatic.className}`}>
       <div className="flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className={`self-center text-5xl font-semibold whitespace-nowrap dark:text-white ${amatic.className}`}>Rooted Essence Co</span>
+          <span className={`self-center text-5xl font-semibold whitespace-nowrap dark:text-white ${amatic.className}`}>Rooted Essence Co.</span>
         </Link>
         <div className="flex sm:hidden md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button

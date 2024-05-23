@@ -6,7 +6,7 @@ export const Footer = () => {
       <aside>
         {/* @todo insert logo */}
         <p className="font-bold">
-          Rooted Essence Co Ltd. <br />
+          Rooted Essence Co.<br />
           Providing Frankincensesince products since 2024
         </p>
         <p>Copyright © 2024 - All right reserved</p>

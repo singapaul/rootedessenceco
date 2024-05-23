@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { TypographyH1 } from "@/components/molecules/typography";
 type Props = {
     image: any;
     title: string;
@@ -35,12 +36,12 @@ export const ProductCard = ({image, title, subtitle, slug}: Props) => {
         />
       </div>
       <CardHeader className="grid gap-1 p-4">
-        <CardTitle>{title}</CardTitle>
+        <CardTitle><TypographyH1 className="text-4xl">{title}</TypographyH1></CardTitle>
         <CardDescription>{subtitle}</CardDescription>
       </CardHeader>
-      <CardContent>
-        <Link href={`products/${slug}`}>
-        <Button className="bg-green-900">Learn more</Button>
+      <CardContent className="flex items-center justify-center w-full">
+        <Link className="w-full" href={`products/${slug}`}>
+        <Button className="bg-green-900 w-full">Learn more</Button>
         </Link>
       </CardContent>
     </Card>
