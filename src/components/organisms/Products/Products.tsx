@@ -5,7 +5,6 @@ import { TypographyH3 } from "@/components/molecules/typography";
 import Link from "next/link";
 
 export const Products = () => {
-  // @todo add parallax to this part later.
   return (
     <section className="relative w-full flex flex-col bg-lime-300 border-black border-t-2 border-b-2">
       <div className="relative w-full flex overflow-x-scroll z-10 scrollbar-thin">
