@@ -100,7 +100,7 @@ export const ContactForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 flex flex-col">
         <FormField
           control={form.control}
           name="name"
@@ -205,7 +205,7 @@ export const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">
+        <Button className="w-full self-center" type="submit">
           Submit
         </Button>
       </form>

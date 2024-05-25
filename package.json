@@ -31,6 +31,7 @@
     "next": "14.2.3",
     "nodemailer": "^6.9.13",
     "react": "^18",
+    "react-carbonbadge": "^2.0.0",
     "react-dom": "^18",
     "react-hook-form": "^7.51.4",
     "react-scroll-parallax": "^3.4.5",

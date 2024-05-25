@@ -29,7 +29,7 @@ export const Hero = () => {
   return (
     <section className="flex flex-col w-full pt-20">
       <div className="w-full flex flex-col">
-        <div className="w-full flex flex-col min-h-60 sm:min-h-[600px] sm:flex-row-reverse sm:justify-between justify-center gap-9 sm:gap-0 bg-green-900">
+        <div className="w-full px-4 flex flex-col min-h-60 sm:min-h-[600px] sm:flex-row-reverse sm:justify-between justify-center gap-9 sm:gap-0 bg-green-900">
           <TypographyH1 className="text-lime-300 text-right sm:self-end leading-normal text-[60px]">
             {"Rooted Essence Co."}
           </TypographyH1>
@@ -37,7 +37,7 @@ export const Hero = () => {
             Sourcing & supplying Frankincense for all your customers needs.
           </TypographyH4>
         </div>
-        <span className="display flex bg-green-900 text-lime-300 min-h-28 items-end w-full">
+        <span className="display px-4 flex bg-green-900 text-lime-300 min-h-28 items-end w-full">
           <Link href='/#story'><TypographyH4 className="text-3xl">Scroll down</TypographyH4></Link>
           <ArrowDown className="animate-bounce" />
         </span>

@@ -3167,6 +3167,11 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
+react-carbonbadge@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-carbonbadge/-/react-carbonbadge-2.0.0.tgz#41777b2a6ca53d43480375a79f9ab6c715766bae"
+  integrity sha512-KzKUYsL0qtGyvZopVGB/+furoQ0kZytLLdXd/apnr/QsM8zzKabnPq3IHe2b8oenHUBSSrE1oVAFdxIQEl5TzQ==
+
 react-dom@^18, react-dom@^18.2.0:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"

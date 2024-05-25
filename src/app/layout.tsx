@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/path-to-your-image.jpg", // Replace with the path to your image
+        url: "/path-to-your-image.jpg", // @todo
         width: 800,
         height: 600,
         alt: "Rooted Essence Co.",

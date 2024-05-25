@@ -7,13 +7,15 @@ import { Products } from "@/components/organisms/Products";
 import { LinkBanner } from "@/components/organisms/LinkBanner";
 import { Contact } from "@/components/organisms/Contact";
 import { Footer } from "@/components/organisms/Footer";
- import { MovingBanner } from "@/components/molecules/MovingBanner";
+import { MovingBanner } from "@/components/molecules/MovingBanner";
+import { LogoBanner } from "@/components/organisms/LogoBanner";
  
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <NavBar />
       <Hero />
+      <LogoBanner />
       <Story />
       <Values />
       <MovingBanner imageURL="/women.png" />

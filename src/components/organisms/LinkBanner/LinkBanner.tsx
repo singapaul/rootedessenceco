@@ -11,7 +11,7 @@ export const LinkBanner = ({title}: Props) => {
 
  
   return (
-    <div className='w-full flex flex-col items-center justify-evenly text-center min-h-32 bg-green-900 py-8 gap-5'>
+    <div className='w-full flex flex-col items-center justify-evenly text-center min-h-32 bg-green-900 py-8 gap-5 border-b-2 border-t-2 border-black'>
         <TypographyH3 className='text-lime-300 text-5xl' >{title}</TypographyH3>
         <Link href='/products'><Button>View Products <ArrowRight className='ml-2'/></Button></Link>
     </div>

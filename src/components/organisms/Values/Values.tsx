@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const Values = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-evenly bg-orange-50 text-green-900 min-h-96">
+    <section className="w-full flex flex-col items-center justify-evenly bg-orange-50 text-green-900 min-h-96 py-6 px-2">
       <TypographyH2 className="text-green-900 text-6xl">Our Values</TypographyH2>
       <TypographyP className="text-center">{valuesDescription}</TypographyP>
       <Tabs
