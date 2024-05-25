@@ -6,7 +6,6 @@ export const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-green-900 text-white">
       <aside>
-        {/* @todo insert logo */}
         <Image className="object-scale-down h-32 sm:h-40" src={logo} alt='logo'/>
         {/* <p className="font-bold">
           Rooted Essence Co.<br />
