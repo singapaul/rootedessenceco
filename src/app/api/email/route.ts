@@ -79,7 +79,7 @@ export async function POST(request: any) {
           </div>
           <div class="section">
             <span class="label">Industry</span>
-            <div class="value">${industry}}</div>
+            <div class="value">${industry}</div>
           </div>
           <div class="section">
             <span class="label">Email address</span>

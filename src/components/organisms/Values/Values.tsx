@@ -13,7 +13,7 @@ export const Values = () => {
         defaultValue="Ethical Sourcing"
         className="w-full text-green-900 mt-10 flex flex-col self-center items-center"
       >
-        <TabsList className="flex flex-wrap min-h-40 sm:min-h-6 bg-inherit text-inherit">
+        <TabsList className="flex flex-wrap min-h-40 bg-inherit text-inherit">
           {values.map((value, index) => {
             return (
               <TabsTrigger key={index} value={value.title}>

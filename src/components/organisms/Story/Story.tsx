@@ -6,8 +6,8 @@ import Table from "@/lib/assets/images/stockFrankTable.png";
 export const Story = () => {
   return (
     <section className="flex flex-col sm:flex-row bg-green-900 text-white w-full items-center sm:text-center">
-      <div className="px-4 py-4 h-full flex flex-col self-center w-full sm:w-2/3">
-        <TypographyH3 className="text-4xl font-semibold text-lime-300">
+      <div className="px-4 py-4 h-full flex flex-col gap-6 w-full sm:w-2/3 justify-between">
+        <TypographyH3 className="text-7xl font-semibold text-lime-300">
           Our Story
         </TypographyH3>
         <TypographyP>{OurStory}</TypographyP>

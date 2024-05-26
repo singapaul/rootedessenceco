@@ -8,7 +8,7 @@ export const LogoBanner = (props: Props) => {
   return (
     <div className="w-full flex flex-col items-center justify-evenly text-center min-h-32 bg-orange-50 py-8 gap-2 border-t-2 border-b-2 border-black px-4">
       <TypographyH3 className="text-black text-5xl">
-        FairWild Certified
+        Working to attain FairWild certification
       </TypographyH3>
       <Image className="max-w-36" src={fairwild} alt="fairwild logo" />
       <TypographyP>

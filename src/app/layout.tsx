@@ -12,15 +12,15 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: '/apple-touch-icon.png',
   },
-  keywords: "natural perfumes, organic beauty products, eco-friendly skincare, Rooted Essence Co. Somalian frankincense",
+  keywords: "Somaliland, Frankincense, Myrrh, Essential oils, Ethical sourcing, Sustainability, Aromatherapy, Natural products, Skincare, Women-led cooperative, Perfumery, Organic",
   openGraph: {
-    title: "Rooted Essence Co.",
-    description: "Business to business frankincense products supplier",
+    title: "Rooted Essence Co | Sustainable and Ethical Frankincense",
+    description: "Business to business sustainable frankincense products supplier",
     url: "https://www.rootedessenceco.com",  
     type: "website",
     images: [
       {
-        url: "/path-to-your-image.jpg", // @todo
+        url: "/logo-med.png",
         width: 800,
         height: 600,
         alt: "Rooted Essence Co.",

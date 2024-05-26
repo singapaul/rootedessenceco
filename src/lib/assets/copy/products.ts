@@ -18,11 +18,10 @@ export const productsArray = [
       "Warm, woody, and resinous aroma: Soothing and meditative for mind and body",
       "Nourishing for the skin: Particularly beneficial for dry and maturing skin",
       "Calming and reflective: Perfect as a meditative aid to deepen the breath",
-      "100% sustainably sourced: Ensuring environmental responsibility",
-      "FairWild certified: Commitment to ethical harvesting practices",
+      "Working to attain FairWild certification: Commitment to ethical harvesting practices",
       "Ethically harvested by a cooperative of women: Empowering local communities",
       "Fair-pay assurance for farmers: Promoting social equity and fairness",
-      "Aroma: Known for its exceptional quality, this essential oil boasts a warm, woody, and resinous aroma that envelops the senses, inviting relaxation and tranquility.",
+      "Aroma: Known for its exceptional quality, this essential oil boasts a warm, woody, and resinous aroma that envelops the senses, inviting relaxation and tranquility."
     ],
   },
   {
@@ -36,12 +35,12 @@ export const productsArray = [
       "Deep and resinous aromatic profile",
       "Enhances overall comfort and ease in the body and joints",
       "Promotes skin health and beauty",
-      "Versatile application: perfect for perfuming or aromatherapy rituals",
+      "Versatile application: perfect for perfuming or aromatherapy",
       "Sustainably sourced from Somaliland",
-      "FairWild certified for ethical and sustainable harvesting practices",
+      "Working to attain FairWild certification for ethical and sustainable harvesting practices",
       "Ethically harvested by a cooperative of women",
       "Fair-pay assurance for farmers",
-      "Aroma: Known for its exceptional quality, this resin boasts a distinct, fresh, and citrusy aroma. Its scent is reminiscent of pine, lemon, and a touch of honey.",
+      "Aroma: Known for its exceptional quality, this resin boasts a distinct, fresh, and citrusy aroma. Its scent is reminiscent of pine, lemon, and a touch of honey."
     ],
   },
   {
@@ -53,14 +52,11 @@ export const productsArray = [
     points: [
       "Stress Reduction: Known for its calming properties, Boswellia Frereana Essential Oil can significantly alleviate stress and anxiety.",
       "Skin Health: This oil benefits skin care, thanks to its anti-inflammatory and healing properties.",
-      "Immune Support: Boswellia Frereana Essential Oil is believed to boost the immune system.",
-      "Anti-inflammatory Effects: It offers natural anti-inflammatory benefits, which can help reduce pain and discomfort associated with conditions like arthritis and digestive disorders.",
-      "Respiratory Relief: The oil can effectively relieve symptoms of respiratory conditions such as congestion, bronchitis, and asthma.",
-      "100% Sustainably Sourced: Ensuring environmental responsibility.",
-      "FairWild Certified: Commitment to ethical harvesting practices.",
+      "Anti-inflammatory Effects",
+      "Working to attain FairWild Certification: Commitment to ethical harvesting practices.",
       "Empowering Women: Ethically harvested by a cooperative of women in Somaliland, supporting local communities.",
       "Fair-Pay Assurance: Promoting social equity and fairness for farmers.",
-      "Aroma: Boswellia Frereana Essential Oil has a very fresh, diffusive, clear, pine-like aroma without any harsh notes, an intense, deep woody/resinous undertone, and a slight citrus/coniferous top note.",
+      "Aroma: Boswellia Frereana Essential Oil has a very fresh, diffusive, clear, pine-like aroma without any harsh notes, an intense, deep woody/resinous undertone, and a slight citrus/coniferous top note."
     ],
   },
   {
@@ -70,16 +66,15 @@ export const productsArray = [
     subtitle:
       "Boswellia Frereana Resin, from Rooted Essence Co., offers purity with a fresh, pine-like scent. This versatile frankincense is ideal for oral hygiene or incense.",
     points: [
-      "Exquisite Sultans grade frankincense",
+      "Exquisite grade frankincense",
       "Available in both Mushaad (large) and Mujarwaal (small) grades to suit your preferences",
       "Versatile application: burn or chew for varied experiences",
       "Revered for oral hygiene and breath freshening",
       "Intriguing floral notes",
-      "100% sustainably sourced",
-      "FairWild certified",
+      "Working to attain FairWild certification",
       "Ethically harvested by a cooperative of women",
       "Fair-pay assurance for farmers",
-      "Aroma: Boswellia Frereana Resin has a very fresh, diffusive, clear, pine-like aroma without any harsh notes, an intense, deep woody/resinous undertone, and a slight citrus/coniferous top note.",
+      "Aroma: Boswellia Frereana Resin has a very fresh, diffusive, clear, pine-like aroma without any harsh notes, an intense, deep woody/resinous undertone, and a slight citrus/coniferous top note."
     ],
   },
   {
@@ -89,13 +84,11 @@ export const productsArray = [
     subtitle:
       "Myrrh Essential Oil, from Commiphora myrrha resin, offers a smoky, earthy fragrance for skincare and healing. Sustainably sourced, it soothes the mind and supports skin care.",
     points: [
-      "Beneficial for skin and wound care: Helps to draw out infection and reduce inflammation",
-      "Emotionally soothing: Relaxes the mind and alleviates negative feelings",
-      "100% sustainably sourced: Ensuring environmental responsibility",
-      "FairWild certified: Commitment to ethical harvesting practices",
-      "Ethically harvested by a cooperative of women: Empowering local communities",
-      "Fair-pay assurance for farmers: Promoting social equity and fairness",
-      "Aroma: The scent of myrrh is complex and difficult to describe. It is often described as having a balsamic, slightly spicy and slightly smoky odor. Some people say it has a note of undergrowth or dried earth. Its fragrance is resinous and rich.",
+      "Emotionally Soothing: Relaxes the mind and alleviates negative feelings.",
+      "Working to attain FairWild Certification: Commitment to ethical harvesting practices.",
+      "Ethically Harvested by a Cooperative of Women: Empowering Local Communities.",
+      "Fair-Pay Assurance for Farmers: Promoting social equity and fairness.",
+      "Aroma: The scent of myrrh is complex and difficult to describe. It is often described as having a balsamic, slightly spicy, and smoky odour. Some people say it has a note of undergrowth or dried earth. Its fragrance is resinous and rich."
     ],
   },
   {
@@ -105,14 +98,13 @@ export const productsArray = [
     subtitle:
       "Myrrh Resin, from Rooted Essence Co., has a rich, smoky aroma with historical significance. Ideal for body care and incense, it's sustainably and ethically sourced.",
     points: [
-      "Ancient and revered resin: Cherished in folklore and spirituality",
-      "Versatile application: Ideal for body care, incense, and extracts",
-      "Distinctive smoky, earthy scent: A timeless favourite among cultures",
-      "100% sustainably sourced: Ensuring environmental responsibility",
-      "FairWild certified: Commitment to ethical harvesting practices",
-      "Ethically harvested by a cooperative of women: Empowering local communities",
-      "Fair-pay assurance for farmers: Promoting social equity and fairness",
-      "Aroma: The scent of myrrh is complex and difficult to describe. It is often described as having a balsamic, slightly spicy and slightly smoky odor. Some people say it has a note of undergrowth or dried earth. Its fragrance is resinous and rich.",
+      "Versatile Application: Ideal for body care, incense, and perfumery.",
+      "Distinctive Smoky, Earthy Scent: A timeless favourite among cultures.",
+      "Deep Golden Chunks of Raw Myrrh Resin: Harvested from the hot, dry landscape of Somaliland.",
+      "Working to attain FairWild Certification: Commitment to ethical harvesting practices.",
+      "Ethically Harvested by a Cooperative of Women: Empowering Local Communities.",
+      "Fair-Pay Assurance for Farmers: Promoting social equity and fairness.",
+      "Aroma: The scent of myrrh is complex and difficult to describe. It is often described as having a balsamic, slightly spicy and smoky odour. Some people say it has a note of undergrowth or dried earth. Its fragrance is resinous and rich."
     ],
   },
 ];
