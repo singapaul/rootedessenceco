@@ -20,13 +20,24 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "public/logo-med.png",
+        url: "/logo-med.png",
         width: 800,
         height: 600,
         alt: "Rooted Essence Co.",
       },
     ],
   },
+  twitter:{
+    card: "summary",
+    title: "Rooted Essence Co | Sustainable and Ethical Frankincense",
+    description: "Business to business sustainable frankincense products supplier",
+    images: [{
+      url: "/logo-med.png",
+      width: 800,
+      height: 800,
+      alt: "Rooted Essence Co.",
+    }]
+  }
 };
 
  
