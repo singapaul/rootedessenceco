@@ -56,7 +56,7 @@ export const ContactForm = () => {
       values;
 
     try {
-      const res = await fetch("/api/email", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/email`, {
         method: "POST",
         body: JSON.stringify({
           businessName,
