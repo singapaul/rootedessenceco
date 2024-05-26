@@ -6,8 +6,8 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Rooted Essence Co. Somalian frankincense supplier",
-  description: "Business to business frankincense products supplier",
+  title: "Rooted Essence Co | Sustainable and Ethical Frankincense",
+  description: "Business to business sustainable frankincense products supplier",
   icons: {
     icon: "/favicon.ico",
     apple: '/apple-touch-icon.png',

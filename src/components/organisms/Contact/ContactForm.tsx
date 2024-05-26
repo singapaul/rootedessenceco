@@ -21,10 +21,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { cn } from "@/lib/utils";
+} from "@/components/ui/select";
 import { productsArray } from "@/lib/assets/copy/products";
-import { toast } from '@/components/ui/use-toast';
+import { toast } from "@/components/ui/use-toast";
 const formSchema = z.object({
   name: z.string().min(4),
   businessName: z.string().min(2).max(50),
@@ -39,7 +38,6 @@ const formSchema = z.object({
 export const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-
   });
 
   const products = productsArray.map((product) => {
@@ -49,10 +47,13 @@ export const ContactForm = () => {
     };
   });
 
+  const industries = ["Perfumery", "Essential Oils", "Skincare & Beauty", "Aromatherapy", "Other"]
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    const { businessName, emailAddress, industry, message, name, product } = values;
+    const { businessName, emailAddress, industry, message, name, product } =
+      values;
 
     try {
       const res = await fetch("http://localhost:3000/api/email", {
@@ -63,7 +64,7 @@ export const ContactForm = () => {
           industry,
           message,
           name,
-          product
+          product,
         }),
         headers: {
           "content-type": "application/json",
@@ -75,23 +76,24 @@ export const ContactForm = () => {
       if (res.ok) {
         toast({
           title: "Enquiry sent",
-          description: "a member of our dedicated team will be in contact with you soon",
-          className: "bg-lime-300"
-        })
+          description:
+            "a member of our dedicated team will be in contact with you soon",
+          className: "bg-lime-300",
+        });
         form.reset({
           businessName: "",
-          emailAddress: "", 
+          emailAddress: "",
           industry: "",
           message: "",
-          name: "", 
-          product: ""
-        })
+          name: "",
+          product: "",
+        });
       } else {
         toast({
           title: "Error",
           description: "contact form not sent",
-          className: "bg-red-500 text-white"
-        })
+          className: "bg-red-500 text-white",
+        });
       }
     } catch (error) {
       console.log(error);
@@ -100,7 +102,10 @@ export const ContactForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 flex flex-col">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-8 flex flex-col"
+      >
         <FormField
           control={form.control}
           name="name"
@@ -108,14 +113,13 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input placeholder="" {...field} />
+                <Input placeholder="Full Name" {...field} />
               </FormControl>
-
               <FormMessage />
             </FormItem>
           )}
         />
-         
+
         <FormField
           control={form.control}
           name="businessName"
@@ -123,11 +127,8 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Business name</FormLabel>
               <FormControl>
-                <Input placeholder="" {...field} />
+                <Input placeholder="Business name" {...field} />
               </FormControl>
-              {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
               <FormMessage />
             </FormItem>
           )}
@@ -139,10 +140,22 @@ export const ContactForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Industry</FormLabel>
-              <FormControl>
-                <Input placeholder="" {...field} />
-              </FormControl>
-
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select industry" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  {industries.map((industry, index) => {
+                    return (
+                      <SelectItem key={index} value={industry}>
+                        {industry}
+                      </SelectItem>
+                    );
+                  })}
+                </SelectContent>
+              </Select>
               <FormMessage />
             </FormItem>
           )}
@@ -154,16 +167,13 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Email address</FormLabel>
               <FormControl>
-                <Input placeholder="" {...field} />
+                <Input placeholder="Email address" {...field} />
               </FormControl>
-              {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
               <FormMessage />
             </FormItem>
           )}
         />
-             <FormField
+        <FormField
           control={form.control}
           name="product"
           render={({ field }) => (
@@ -176,13 +186,13 @@ export const ContactForm = () => {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  {
-                    products.map((product, index) => {
-                      return (
-                        <SelectItem key={index} value={product.value}>{product.label}</SelectItem>
-                      )
-                    })
-                  }
+                  {products.map((product, index) => {
+                    return (
+                      <SelectItem key={index} value={product.value}>
+                        {product.label}
+                      </SelectItem>
+                    );
+                  })}
                 </SelectContent>
               </Select>
               <FormMessage />
@@ -198,9 +208,6 @@ export const ContactForm = () => {
               <FormControl>
                 <Textarea {...field} placeholder="Your message here..." />
               </FormControl>
-              {/* <FormDescription>
-                  This is your public display name.
-                </FormDescription> */}
               <FormMessage />
             </FormItem>
           )}
@@ -209,7 +216,6 @@ export const ContactForm = () => {
           Submit
         </Button>
       </form>
-
     </Form>
   );
 };

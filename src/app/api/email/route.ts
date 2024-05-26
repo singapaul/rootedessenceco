@@ -8,8 +8,8 @@ export async function POST(request: any) {
     port: 587,
     secure: false,
     auth: {
-      user: "752c02001@smtp-brevo.com",
-      pass: "2h1ygTnwEIpG5mqP",
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASSWORD,
     },
   });
 
@@ -19,7 +19,7 @@ export async function POST(request: any) {
   try {
     const options = {
       from: "enquiries@rootedessenceco.com",
-      to: ["paulmichaelhardman@gmail.com", emailAddress],
+      to: ["info@rootedessenceco.com", emailAddress],
       subject: `Rooted Essence Co new enquiry: ${requestBody.name} from ${requestBody.businessName}`,
       html: `<html>
       <head>

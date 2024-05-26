@@ -16,32 +16,16 @@ import {
 } from "@/components/ui/carousel";
 import { useRef } from "react";
 import Link from "next/link";
-
+import test from '@/lib/assets/images/landscape.jpg'
 export const Hero = () => {
   const CarouselMessages = [
+    "Sourcing & supplying Frankincense for all your business needs.",
     "Empowering Communities, Preserving Nature, Ensuring Quality",
     "Ethical Sourcing for a Sustainable Future",
-    "Pure Frankincense, Authentic Origins, Lasting Impact",
-    "Integrity in Every Drop, Dignity in Every Step",
-    "Supporting Women, Sustaining Ecosystems, Serving Excellence",
   ];
   const plugin = useRef(Autoplay({ delay: 4000 }));
   return (
     <section className="flex flex-col w-full pt-20">
-      <div className="w-full flex flex-col">
-        <div className="w-full px-4 flex flex-col min-h-60 sm:min-h-[600px] sm:flex-row-reverse sm:justify-between justify-center gap-9 sm:gap-0 bg-green-900">
-          <TypographyH1 className="text-lime-300 text-right sm:self-end leading-normal text-[60px]">
-            {"Rooted Essence Co."}
-          </TypographyH1>
-          <TypographyH4 className="text-lime-300 text-left self-center text-[50px] leading-normal">
-            Sourcing & supplying Frankincense for all your customers needs.
-          </TypographyH4>
-        </div>
-        <span className="display px-4 flex bg-green-900 text-lime-300 min-h-28 items-end w-full">
-          <Link href='/#story'><TypographyH4 className="text-3xl">Scroll down</TypographyH4></Link>
-          <ArrowDown className="animate-bounce" />
-        </span>
-      </div>
       <div className="w-full flex flex-col sm:flex-row" id="story">
         <div className="w-full">
           <Image

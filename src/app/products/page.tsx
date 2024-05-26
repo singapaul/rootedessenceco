@@ -13,7 +13,7 @@ import { TypographyH1 } from "@/components/molecules/typography";
   return (
     <main className="flex justify-between min-h-screen flex-col items-center">
       <NavBar />
-      <ParallaxBanner
+      {/* <ParallaxBanner
         layers={[
           { image: "/earth.jpg", speed: -20 },
           {
@@ -26,7 +26,7 @@ import { TypographyH1 } from "@/components/molecules/typography";
           },
         ]}
         className="aspect-[2/1] min-h-[400px]"
-      />
+      /> */}
       <ProductGrid>
         {productsArray.map((product, index) => {
           return (
