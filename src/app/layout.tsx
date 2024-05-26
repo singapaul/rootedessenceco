@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logo-med.png",
+        url: "public/logo-med.png",
         width: 800,
         height: 600,
         alt: "Rooted Essence Co.",
@@ -28,6 +28,8 @@ export const metadata: Metadata = {
     ],
   },
 };
+
+ 
 
 export default function RootLayout({
   children,
