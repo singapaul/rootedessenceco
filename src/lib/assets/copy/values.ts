@@ -12,7 +12,7 @@ export const values: value[] = [
   },
   {
     title: "Sustainability",
-    description: `Environmental stewardship is central to our operations. We strive to minimise our ecological impact by embracing sustainable harvesting practices and promoting biodiversity conservation, safeguarding the well-being of future generations. All our products will be FairWild certified, ensuring sustainable and ethical harvesting of wild plants.`,
+    description: `Environmental stewardship is central to our operations. We strive to minimise our ecological impact by embracing sustainable harvesting practices and promoting biodiversity conservation, safeguarding the well-being of future generations. We are working towards our products attaining FairWild certification, ensuring sustainable and ethical harvesting of wild plants.`,
   },
   {
     title: `Quality & Authenticity`,
