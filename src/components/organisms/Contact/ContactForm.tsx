@@ -56,7 +56,7 @@ export const ContactForm = () => {
       values;
 
     try {
-      const res = await fetch("http://localhost:3000/api/email", {
+      const res = await fetch("/api/email", {
         method: "POST",
         body: JSON.stringify({
           businessName,
