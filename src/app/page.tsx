@@ -18,7 +18,7 @@ export default function Home() {
       <LogoBanner />
       <Story />
       <Values />
-      <MovingBanner imageURL="/women.png" />
+      <MovingBanner imageURL="/landscape.jpg" />
       <LinkBanner title="Products" />
       <Products />
       <Contact />
